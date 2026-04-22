@@ -1,0 +1,7 @@
+node_modules
+.git
+*.log
+srv.out
+srv.err
+server.out
+server.err
