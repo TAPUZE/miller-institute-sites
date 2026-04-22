@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=2N_sDSC0" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://blocklist.net.ua/check/?ip=37.114.33.6","20260104231441","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1767568481");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <meta charset="utf-8">
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  <title>Проверка IP - BlockList.net.ua</title>
+  <meta name="description" content="BlockList - защита в Интернет">
+  <meta name="keywords" content="защита провайдера, blocklist, thehost, антиспам, антиддос, защита сайтов, защита веб-ресусов">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/web/20260104231441im_/https://blocklist.net.ua/favicon.ico"/>
+  <link href="/web/20260104231441cs_/https://blocklist.net.ua/css/style.css" rel="stylesheet">
+  
+  
+  <script type="text/javascript" src="/web/20260104231441js_/https://blocklist.net.ua/js/jquery-1.8.2.js"></script>
+  <script type="text/javascript" src="/web/20260104231441js_/https://blocklist.net.ua/js/check.js"></script>
+  
+  
+  
+  <script type="text/javascript">
+    var ipval;
+    var inpred = false;
+    var re = /[^0-9\.]/gi;
+
+    function checkIP(ipval, click) {
+      var vinp = document.getElementById("vinp");
+      if (re.test(ipval) || ipval === '') {
+        vinp.value = ipval.replace(re, '');
+        return false;
+      } else {
+        setred = true;
+        checkres = false;
+        iparr = ipval.split(".");
+        if(iparr.length<=4){
+          for(i=0;i<iparr.length;i++){
+            numpart = parseInt(iparr[i]);
+            if(numpart >= 0 && numpart <= 255) {
+              if(inpred)
+                vinp.setAttribute("class", "");
+              setred = false;
+            } else {
+              setred = true;
+              break;
+            }
+          }
+          if(i==4)
+            checkres = true;
+        }
+        if(setred || click && !checkres) {
+          inpred = true;
+          vinp.setAttribute("class", "red");
+        }
+        return checkres;
+      }
+    }
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- TheHost GlobalStat -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//web.archive.org/web/20260104231441/https://globalstat.thehost.ua/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', 'ylO3P7DD9D4Ex']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//web.archive.org/web/20260104231441im_/https://globalstat.thehost.ua/matomo.php?idsite=ylO3P7DD9D4Ex&amp;rec=1" style="border:0;" alt=""/></p></noscript>
+  <!-- End TheHost GlobalStat -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://web.archive.org/web/20260104231441js_/https://www.googletagmanager.com/gtag/js?id=G-KCK8EPP9CS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KCK8EPP9CS');
+  </script>
+  <!-- Google Universal Analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6705291-4']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20260104231441/https://ssl' : 'https://web.archive.org/web/20260104231441/http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+    
+      <body>
+      
+    
+  <div class="wrapper">
+    <header id="header">
+    <div class="container">
+      <div id="langs">
+        <a href="/web/20260104231441/https://blocklist.net.ua/setlang/ua/">UA</a> | <span class="active">RU</span> | <a href="/web/20260104231441/https://blocklist.net.ua/setlang/en/">EN</a>
+      </div>
+      <div id="logo"><a href="https://web.archive.org/web/20260104231441/https://blocklist.net.ua/"></a></div>
+      <nav>
+      <ul>
+        <li><a href="/web/20260104231441/https://blocklist.net.ua/check/">Проверить IP</a></li>
+        <li><a href="/web/20260104231441/https://blocklist.net.ua/providers/">Провайдерам</a></li>
+        <li><a href="/web/20260104231441/https://blocklist.net.ua/rules/">Правила использования</a></li>
+        <li><a href="/web/20260104231441/https://blocklist.net.ua/about/">О проекте</a></li>
+      </ul>
+      </nav>
+    </div>
+    
+      
+    
+      <form name="check" action="/web/20260104231441/https://blocklist.net.ua/check/" class="check-form">
+      
+        <div class="ip-current"><a href="/web/20260104231441/https://blocklist.net.ua/check/"><i class="icon-info"></i>Ваш текущий IP: 37.114.33.6</a></div>
+        <input onkeyup="checkIP(this.value)" id="vinp" name="ip" value="" type="text" placeholder="Введите IP для проверки" onfocus="if(this.value=='37.114.33.6')this.value='';" onblur="if(this.value=='')this.value='';"/><input onclick="return checkIP(document.check.ip.value, true);" type="submit" value="Проверить"/>
+      
+
+      
+      </form>
+    </header> <!-- /end #header -->
+    
+      
+
+  <section id="content" class="container">
+    <aside role="complementary">
+      <h2 class="h1">Результаты проверки</h2>
+                    <div class="result locked">
+              IP <span class="ip">37.114.33.6</span> <span id="notlock">ЗАБЛОКИРОВАН</span>
+              <div class="result-date">25.11.2025, 01:07</div>
+            </div>
+          <div id="blocked">
+            <h3>Причина блокировки</h3>
+            <ul class="baselist">
+              <li>DDoS атака на сайт msu.edu.ua / DDoS attack on site msu.edu.ua</li>
+            </ul>
+            <h3>Как избежать подобной блокировки?</h3>
+            <p>
+              Рекомендуем проверить свой компьютер антивирусом, т.к. часто именно вирусы, которые осуществляют вредоносную деятельность без согласия пользователя, являются причиной рассылок спама и атак на другие ресурсы. Также рекомендуем проверить, чтобы Ваш IP адрес не использовался кем-то другим, кто мог бы совершать какие-то вредоносные действия в сети Интернет.
+            </p>
+                          <h3>Снятие блокировки IP адреса</h3>
+              <form action="/web/20260104231441/https://blocklist.net.ua/check/unlock/">
+                <div id="security">
+                  <p>
+                    Укажите код:<br/>
+                    <input type="text" name="captcha" class="cinp"/><br/>
+                    <a href="#" onclick="reloadImg();return false;">Не вижу код</a>
+                  </p>
+                  <p>
+                    <img id="captcha" src="/web/20260104231441im_/https://blocklist.net.ua/system/security/index.php"/>
+                  </p>
+                </div>
+                <input type="submit" id="buttonsubm" class="btn-green" value="Снять блокировку"/>
+              </form>
+                      </div>
+                <div id="unlock_result">
+        </div>
+    </aside> <!-- /end #aside -->
+
+    <div role="main" id="main">
+      <h1>Общая информация об IP адресе</h1>
+      <div id="ripe">
+        
+      </div>
+    </div> <!-- /end #main -->
+  </section> <!-- /end #content -->
+    
+
+    
+  
+    <div class="push"></div>
+  </div> <!-- /end .wrapper -->
+
+  <footer id="footer">
+    <div class="container">
+    <div class="row">
+      <div class="main">
+      <h3>О проекте</h3>
+      <p>Проект BlockList призван стать защитой от негативного влияния вредоносных и потенциально опасных явлений в сети Интернет. В первую очередь данный сервис поможет интернет и хостинг провайдерам защитить своих абонентов от взлома их сайтов, от получения большого количества спам-рассылок или от попыток подбора паролей к серверам и оборудованию.</p>
+      <p>Для обычных пользователей данный ресурс позволит быстро проверить не выполнялись ли с его IP адреса какие-то вредоносные действия, что прямо или косвенно может быть вызвано работой вируса на компьютере или о том, что c IP адреса посетителя также осуществляет работу  какой-то другой недобросовестный пользователь.</p>
+      </div>
+      <div class="sidebar">
+  <h3>Последние новости и изменения</h3>
+  <ul>
+                  <li>06.02.23 Added Ukrainian localization for the web resource BlockList.net.ua.</li>
+              <li>27.08.22 Fixed bug when blocklist.csv downloads often truncated.</li>
+              <li>25.12.20 Added "PARASITE HTTP CONNECTIONS" chart on the providers page.</li>
+              <li>14.11.19 Improved Providers page by adding "Parasite http requests frequency" chart</li>
+              <li>10.02.19 Minor API improvements</li>
+            </ul>
+</div><!-- 02:14:31 05.01 -->
+    </div>
+    </div>
+    <div id="copyright">
+      Хостинг - <a href="https://web.archive.org/web/20260104231441/http://thehost.ua/" target="_blank">TheHost.ua</a>
+    </div>
+  </footer> <!-- /end #footer -->
+  </body>
+</html>
+<!--
+     FILE ARCHIVED ON 23:14:41 Jan 04, 2026 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:49:00 Apr 22, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.775
+  exclusion.robots: 0.047
+  exclusion.robots.policy: 0.035
+  esindex: 0.01
+  cdx.remote: 13.433
+  LoadShardBlock: 252.959 (6)
+  PetaboxLoader3.resolve: 150.55 (4)
+  PetaboxLoader3.datanode: 173.488 (8)
+  load_resource: 97.812
+  loaddict: 20.97
+-->

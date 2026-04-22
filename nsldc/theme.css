@@ -1,0 +1,90 @@
+/* NSLDC — Bold Activist Yellow on Black
+   Newsprint energy: giant uppercase condensed display, high contrast. */
+:root{
+  --bg:#0a0a0a;--bg-alt:#141414;--ink:#fafafa;--muted:#a1a1a1;
+  --accent:#f5d312;--accent2:#ff5c3b;
+  --line:rgba(255,255,255,0.14);--card:#141414;
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3,h4{font-family:'Inter',sans-serif;font-weight:900;letter-spacing:-0.04em;text-transform:uppercase;line-height:0.9}
+
+nav.site-nav{background:rgba(10,10,10,0.94);border-bottom:1px solid var(--line);color:var(--ink)}
+.brand{color:var(--ink);text-transform:uppercase;letter-spacing:0.08em;font-family:'Inter',sans-serif;font-weight:800}
+.brand em{color:var(--accent);font-style:normal}
+.nav-links a{color:var(--muted)}
+.nav-links a:hover,.nav-links a.active{color:var(--accent)}
+
+/* Hero: giant stacked wordmark on black */
+header.hero{padding:100px 0 80px;background:var(--bg);border-bottom:8px solid var(--accent)}
+header.hero::before{display:none}
+header.hero .eyebrow{color:var(--accent);background:var(--bg);display:inline-block;padding:6px 14px;border:2px solid var(--accent);border-radius:0;font-weight:800}
+header.hero h1{font-size:clamp(3rem,13vw,11rem);color:var(--ink);margin-bottom:40px}
+header.hero h1 em{font-style:normal;color:var(--accent);display:block}
+header.hero h1 .slash{color:var(--accent2)}
+header.hero .tagline{color:var(--muted);max-width:640px;font-size:1.1rem}
+
+/* Ticker marquee */
+.ticker{background:var(--accent);color:var(--bg);padding:18px 0;overflow:hidden;white-space:nowrap;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;font-size:1rem;border-top:2px solid var(--bg);border-bottom:2px solid var(--bg)}
+.ticker-track{display:inline-block;animation:nslmarquee 40s linear infinite;padding-left:100%}
+.ticker span{margin:0 30px}
+.ticker .dot{color:var(--accent2)}
+@keyframes nslmarquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+
+/* Sections */
+section{background:var(--bg)}
+section.alt-bg{background:var(--bg-alt)}
+h2{font-size:clamp(2.2rem,6vw,4.8rem)}
+h2 em{color:var(--accent);font-style:normal}
+.eyebrow{color:var(--accent);font-weight:800}
+.lead{color:var(--muted)}
+p{color:var(--muted)}
+ul li{color:var(--muted)}
+
+/* Feature grid: yellow divider lines, cards like newsprint */
+.feature-grid{background:var(--accent);border:2px solid var(--accent)}
+.feature{background:var(--bg);color:var(--ink)}
+.feature h3{color:var(--accent);font-size:1.2rem;text-transform:uppercase}
+.feature .mark{color:var(--accent2);font-family:'Inter',sans-serif;font-weight:800;font-style:normal;letter-spacing:0.08em}
+.feature p{color:var(--muted)}
+
+/* Cards */
+.card{background:var(--card);border:2px solid var(--line);border-radius:0}
+.card:hover{border-color:var(--accent);transform:translateY(-6px)}
+.card h3{color:var(--accent);font-size:1.25rem}
+.card .idx{color:var(--accent2);font-family:'Inter',sans-serif;font-weight:800;font-style:normal}
+.card p{color:var(--muted)}
+.card .more{color:var(--ink);border-color:var(--accent)}
+
+/* Stats */
+.stats{background:var(--accent);color:var(--bg);padding:80px 0;border-top:8px solid var(--bg);border-bottom:8px solid var(--bg)}
+.stats h2{color:var(--bg)}
+.stats h2 em{color:var(--bg)}
+.stats .eyebrow{color:var(--bg)}
+.stats-grid{background:var(--bg)}
+.stat{background:var(--bg)}
+.stat b{color:var(--accent);font-family:'Inter',sans-serif;font-weight:900}
+.stat span{color:var(--muted);text-transform:uppercase;letter-spacing:0.15em;font-weight:700}
+
+/* Buttons: yellow block */
+.btn{background:var(--accent);color:var(--bg);border-radius:0;border:2px solid var(--accent);text-transform:uppercase;letter-spacing:0.1em;font-weight:800}
+.btn:hover{background:var(--bg);color:var(--accent);border-color:var(--accent);transform:translate(-3px,-3px);box-shadow:4px 4px 0 var(--accent)}
+.btn-ghost{background:transparent;border:2px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--accent);border-color:var(--accent);color:var(--bg);box-shadow:4px 4px 0 var(--ink)}
+
+/* Pills: black with yellow outline */
+.pill{background:var(--bg);border:2px solid var(--accent);color:var(--ink);border-radius:0;text-transform:uppercase;letter-spacing:0.1em;font-weight:700;font-size:0.8rem}
+.pill:hover{background:var(--accent);color:var(--bg)}
+
+/* Event visual */
+.event{background:var(--card);border:2px solid var(--accent);padding:40px}
+.event-visual{background:linear-gradient(135deg,var(--accent2),var(--accent));color:var(--bg)}
+.event-body .role{color:var(--accent);font-weight:800}
+
+/* Footer */
+footer.site-footer{background:var(--bg);border-top:8px solid var(--accent);color:var(--muted)}
+footer.site-footer h4{color:var(--accent)}
+.footer-brand{color:var(--ink);text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:900}
+.footer-brand em{color:var(--accent);font-style:normal}
+
+blockquote{background:var(--card);border-left:4px solid var(--accent);color:var(--ink);font-family:'Inter',sans-serif;font-style:normal;text-transform:none;font-weight:500}
+blockquote cite{color:var(--accent)}

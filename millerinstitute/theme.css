@@ -1,0 +1,89 @@
+/* The Miller Institute — Warm Institutional
+   Parent brand: timeless, calm, academic. Forest green + brass on warm paper. */
+:root{
+  --bg:#f4efe6;--bg-alt:#e8ddc8;--ink:#141714;--muted:#5b5a52;
+  --accent:#2c5f4e;--accent2:#a67c3a;
+  --line:rgba(20,23,20,0.14);--card:#faf6ec;
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:500}
+
+nav.site-nav{background:rgba(244,239,230,0.92);border-bottom:1px solid var(--line)}
+.brand{font-weight:600;letter-spacing:-0.01em}
+.brand em{color:var(--accent);font-style:italic}
+
+/* Hero: centered institutional wordmark, no image background */
+header.hero{padding:140px 0 120px;text-align:center;background:var(--bg);border-bottom:1px solid var(--line)}
+header.hero::before{display:none}
+header.hero .container{max-width:980px}
+header.hero .eyebrow{color:var(--accent);letter-spacing:0.4em;margin-bottom:28px}
+header.hero h1{font-size:clamp(2.6rem,6.5vw,5.6rem);font-weight:500;line-height:1.02;letter-spacing:-0.025em;margin:0 auto 32px;max-width:900px}
+header.hero h1 em{font-style:italic;color:var(--accent);font-weight:400}
+header.hero .tagline{color:var(--muted);font-size:1.15rem;max-width:680px;margin:0 auto 36px}
+header.hero .hero-cta{justify-content:center}
+header.hero .hero-ornament{justify-content:center;color:var(--accent2);margin-top:16px}
+header.hero .hero-ornament::before,header.hero .hero-ornament::after{background:var(--accent2);opacity:0.45;flex-basis:80px}
+
+/* Monogram above hero */
+.monogram{display:block;margin:0 auto 28px;width:72px;height:72px;border:1.5px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-style:italic;font-size:2.4rem;color:var(--accent);font-weight:500}
+
+/* Portrait row under hero */
+.portrait-row{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.portrait-row img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:var(--bg-alt);filter:grayscale(30%) sepia(10%);transition:filter .4s}
+.portrait-row img:hover{filter:none}
+@media(max-width:800px){.portrait-row{grid-template-columns:repeat(3,1fr)}.portrait-row img:nth-child(n+4){display:none}}
+
+/* Sections */
+h2{font-weight:500}
+h2 em{font-style:italic;color:var(--accent);font-weight:400}
+.eyebrow{color:var(--accent2);letter-spacing:0.3em}
+
+/* Rule divider */
+.rule{display:flex;align-items:center;gap:16px;font-family:'Fraunces',serif;font-style:italic;color:var(--accent);font-size:1.1rem;margin:40px 0}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* Conferences list: editorial style */
+.conf-list{border-top:1px solid var(--line);margin-top:40px}
+.conf-list a{display:grid;grid-template-columns:80px 1fr auto;gap:30px;padding:32px 0;border-bottom:1px solid var(--line);align-items:baseline;transition:background .25s}
+.conf-list a:hover{background:var(--card)}
+.conf-list a:hover .conf-title{color:var(--accent)}
+.conf-list .num{font-family:'Fraunces',serif;font-style:italic;color:var(--accent2);font-size:1.1rem}
+.conf-title{font-family:'Fraunces',serif;font-size:clamp(1.4rem,2.6vw,2rem);font-weight:500;letter-spacing:-0.01em;margin:0 0 6px;transition:color .25s}
+.conf-meta{color:var(--muted);font-size:0.92rem}
+.conf-arrow{font-family:'Fraunces',serif;font-style:italic;color:var(--accent);font-size:1.3rem}
+@media(max-width:700px){.conf-list a{grid-template-columns:60px 1fr}.conf-arrow{display:none}}
+
+/* Feature grid */
+.feature-grid{background:var(--line)}
+.feature{background:var(--bg)}
+.feature .mark{color:var(--accent2)}
+.feature h3{color:var(--ink);font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:1.15rem}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--line);border-radius:0}
+.card:hover{border-color:var(--accent)}
+.card .idx{color:var(--accent2)}
+.card h3{font-family:'Fraunces',serif;font-weight:500}
+
+/* Buttons: understated brass */
+.btn{background:var(--accent);color:var(--bg);font-weight:500;letter-spacing:0.04em}
+.btn:hover{background:var(--ink)}
+.btn-ghost{background:transparent;border:1px solid var(--ink);color:var(--ink)}
+
+/* Stats */
+.stats{background:var(--ink);color:var(--bg)}
+.stats h2,.stats h2 em{color:var(--bg)}
+.stats .eyebrow{color:var(--accent2)}
+.stat b{color:var(--accent2);font-family:'Fraunces',serif;font-weight:500}
+
+blockquote{background:var(--card);border-left:3px solid var(--accent);font-style:italic;font-family:'Fraunces',serif}
+blockquote cite{color:var(--accent2)}
+
+/* Pills */
+.pill{background:transparent;border:1px solid var(--line);color:var(--ink);font-family:'Fraunces',serif;font-style:italic}
+.pill:hover{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+
+/* Footer */
+footer.site-footer{background:var(--ink)}
+footer.site-footer h4{color:var(--accent2)}
+.footer-brand em{color:var(--accent2)}

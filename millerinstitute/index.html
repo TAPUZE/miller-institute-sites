@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/shared/site.css">
-<style>:root{--accent:#c2410c;--accent2:#b08d3a;--bg:#fbfaf6;--bg-alt:#ece8db}</style>
+<link rel="stylesheet" href="/theme.css">
 </head>
 <body>
 
@@ -24,9 +24,10 @@
   </div>
 </nav>
 
-<header class="hero with-img" style="--hero-img:url('/img/miller-home-right.png')">
+<header class="hero">
   <div class="container">
-    <span class="eyebrow">The Ceceilyn Miller Institute</span>
+    <div class="monogram" aria-hidden="true">M</div>
+    <span class="eyebrow">The Ceceilyn Miller Institute · Est. 1993</span>
     <h1>For Leadership &amp; Diversity<br>in <em>America.</em></h1>
     <p class="tagline">A professional training organization providing leadership development, diversity education, and inclusion programming to schools, colleges, corporations, and public-safety agencies across the country.</p>
     <div class="hero-cta">
@@ -36,6 +37,14 @@
     <div class="hero-ornament">Training · Facilitation · National Conferences</div>
   </div>
 </header>
+
+<div class="portrait-row" aria-hidden="true">
+  <img src="/img/dr-rita-johnson.png" alt="Dr. Rita Johnson">
+  <img src="/img/dr-christopher-irving.png" alt="Dr. Christopher Irving">
+  <img src="/img/ayannahnewphoto.png" alt="Ayannah Johnson">
+  <img src="/img/dr-vikey-owles.png" alt="Dr. Vikey Owles">
+  <img src="/img/dr-Mike-Anthony.png" alt="Dr. Mike Anthony">
+</div>
 
 <section>
   <div class="container">
@@ -77,11 +86,27 @@
       <span class="eyebrow">National Conferences</span>
       <h2>Four flagship <em>gatherings.</em></h2>
       <p class="lead">CMI produces the field's leading student-leadership conferences.</p>
-      <div class="cards-2" style="margin-top:28px">
-        <a class="card reveal" href="/nsldc/"><span class="idx">/ Conference 01</span><h3>NSLDC</h3><p>National Student Leadership Diversity Convention · Orlando · April 17–19, 2026.</p><span class="more">Visit →</span></a>
-        <a class="card reveal" href="/antibullyingconference/"><span class="idx">/ Conference 02</span><h3>Anti-Bullying Conference</h3><p>School Climate &amp; Anti-Bullying Conference · Atlantic City · May 19–20, 2026.</p><span class="more">Visit →</span></a>
-        <a class="card reveal" href="/blackstudentslead/"><span class="idx">/ Conference 03</span><h3>Black Students Lead</h3><p>NYC Metro · November 13–14, 2026.</p><span class="more">Visit →</span></a>
-        <a class="card reveal" href="/latinxleads/"><span class="idx">/ Conference 04</span><h3>Latinx Leads</h3><p>NYC Metro · November 13–14, 2026.</p><span class="more">Visit →</span></a>
+      <div class="conf-list reveal">
+        <a href="/nsldc/">
+          <span class="num">01</span>
+          <div><div class="conf-title">National Student Leadership Diversity Convention</div><div class="conf-meta">Orlando, FL · April 17–19, 2026</div></div>
+          <span class="conf-arrow">→</span>
+        </a>
+        <a href="/antibullyingconference/">
+          <span class="num">02</span>
+          <div><div class="conf-title">School Climate &amp; Anti-Bullying Conference</div><div class="conf-meta">Stockton University · May 19–20, 2026</div></div>
+          <span class="conf-arrow">→</span>
+        </a>
+        <a href="/blackstudentslead/">
+          <span class="num">03</span>
+          <div><div class="conf-title">Black Students Lead</div><div class="conf-meta">NYC Metro · November 13–14, 2026</div></div>
+          <span class="conf-arrow">→</span>
+        </a>
+        <a href="/latinxleads/">
+          <span class="num">04</span>
+          <div><div class="conf-title">Latinx Leads</div><div class="conf-meta">NYC Metro · November 13–14, 2026</div></div>
+          <span class="conf-arrow">→</span>
+        </a>
       </div>
     </div>
   </div>

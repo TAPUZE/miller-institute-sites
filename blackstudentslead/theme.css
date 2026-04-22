@@ -1,0 +1,94 @@
+/* Black Students Lead — Afro-Futurist Plum & Gold
+   Rich dark plum background, gold accents, curved shapes, cream text. */
+:root{
+  --bg:#1b0b2a;--bg-alt:#2a1140;--ink:#fdf7ea;--muted:#c8b8d8;
+  --accent:#f6b93b;--accent2:#e85d75;
+  --line:rgba(246,185,59,0.25);--card:#2a1140;
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);background-image:radial-gradient(ellipse at 10% 10%,rgba(246,185,59,0.10),transparent 45%),radial-gradient(ellipse at 90% 90%,rgba(232,93,117,0.10),transparent 45%);background-attachment:fixed}
+h1,h2,h3,h4{font-family:'Fraunces',serif;color:var(--ink)}
+
+nav.site-nav{background:rgba(27,11,42,0.88);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}
+.brand,.brand a{color:var(--ink)}
+.brand em{color:var(--accent)}
+.nav-links a{color:var(--muted)}
+.nav-links a:hover,.nav-links a.active{color:var(--accent)}
+
+/* Hero: circular portrait + radial glow */
+header.hero{padding:100px 0 80px;background:transparent}
+header.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 80% 40%,rgba(246,185,59,0.18),transparent 55%),radial-gradient(ellipse at 20% 80%,rgba(232,93,117,0.15),transparent 55%)}
+header.hero .container{display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:center}
+@media(max-width:900px){header.hero .container{grid-template-columns:1fr}}
+header.hero .eyebrow{color:var(--accent);letter-spacing:0.35em}
+header.hero h1{font-size:clamp(2.6rem,7vw,5.8rem);line-height:1.02;letter-spacing:-0.02em}
+header.hero h1 em{font-style:italic;color:var(--accent);background:linear-gradient(90deg,var(--accent) 0%,var(--accent2) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+header.hero .tagline{color:var(--muted)}
+
+.hero-circle{position:relative;aspect-ratio:1;max-width:520px;margin:0 auto}
+.hero-circle .ring{position:absolute;inset:0;border:2px solid var(--accent);border-radius:50%;transform:scale(1.08);opacity:0.6}
+.hero-circle .ring::before{content:"";position:absolute;inset:-24px;border:1px dashed var(--accent2);border-radius:50%;animation:bslspin 40s linear infinite}
+@keyframes bslspin{to{transform:rotate(360deg)}}
+.hero-circle img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;box-shadow:0 30px 80px rgba(0,0,0,0.4)}
+.hero-circle .badge{position:absolute;bottom:-10px;right:-10px;background:var(--accent);color:var(--bg);padding:18px 22px;border-radius:999px;font-size:0.78rem;letter-spacing:0.28em;text-transform:uppercase;font-weight:800;box-shadow:0 10px 40px rgba(246,185,59,0.35)}
+
+/* Sections */
+section{background:transparent}
+section.alt-bg{background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2 em{color:var(--accent);font-style:italic}
+.eyebrow{color:var(--accent)}
+.lead,p,ul li{color:var(--muted)}
+
+/* Feature grid: gold hairlines, deep plum cards */
+.feature-grid{background:var(--line);border:1px solid var(--line)}
+.feature{background:var(--bg)}
+.feature h3{color:var(--ink)}
+.feature .mark{color:var(--accent)}
+.feature p{color:var(--muted)}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px}
+.card:hover{border-color:var(--accent);transform:translateY(-6px)}
+.card h3{color:var(--ink)}
+.card .idx{color:var(--accent)}
+.card p{color:var(--muted)}
+.card .more{color:var(--accent);border-color:var(--accent)}
+
+/* Stats */
+.stats{background:linear-gradient(135deg,var(--bg-alt) 0%,var(--bg) 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats .eyebrow{color:var(--accent)}
+.stats h2,.stats h2 em{color:var(--ink)}
+.stats-grid{background:var(--line)}
+.stat{background:var(--bg)}
+.stat b{color:var(--accent);font-family:'Fraunces',serif}
+.stat span{color:var(--muted)}
+
+/* Buttons: gold pill with glow */
+.btn{background:var(--accent);color:var(--bg);font-weight:700}
+.btn:hover{background:var(--accent2);color:var(--ink);box-shadow:0 10px 30px rgba(232,93,117,0.4)}
+.btn-ghost{background:transparent;border:1.5px solid var(--accent);color:var(--accent)}
+.btn-ghost:hover{background:var(--accent);color:var(--bg)}
+
+/* Pills: rounded, gold border */
+.pill{background:transparent;border:1px solid var(--accent);color:var(--ink);border-radius:999px}
+.pill:hover{background:var(--accent);color:var(--bg)}
+
+.hero-ornament{color:var(--accent)}
+.hero-ornament::before,.hero-ornament::after{background:var(--accent);opacity:0.4}
+
+/* Event */
+.event{background:var(--card);border:1px solid var(--line);border-radius:24px}
+.event-visual{background:linear-gradient(135deg,var(--accent2),var(--accent));border-radius:20px}
+.event-body .role{color:var(--accent)}
+
+blockquote{background:var(--card);border-left:4px solid var(--accent);color:var(--ink);border-radius:0 14px 14px 0}
+blockquote cite{color:var(--accent)}
+
+/* Footer */
+footer.site-footer{background:#0c0617;border-top:1px solid var(--line)}
+footer.site-footer h4{color:var(--accent)}
+.footer-brand{color:var(--ink)}
+.footer-brand em{color:var(--accent)}
+
+/* Speaker portraits */
+.speaker{background:var(--card);border:1px solid var(--line);border-radius:20px}
+.speaker .portrait{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 100%)}
