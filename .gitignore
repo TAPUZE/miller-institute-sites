@@ -4,3 +4,7 @@ node_modules/
 .vscode/
 *.log
 site.zip
+
+server.out
+server.err
+package-lock.json.bak
