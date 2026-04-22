@@ -11,6 +11,8 @@ h1,h2,h3,h4{font-family:'Inter',sans-serif;font-weight:900;letter-spacing:-0.04e
 nav.site-nav{background:rgba(10,10,10,0.94);border-bottom:1px solid var(--line);color:var(--ink)}
 .brand{color:var(--ink);text-transform:uppercase;letter-spacing:0.08em;font-family:'Inter',sans-serif;font-weight:800}
 .brand em{color:var(--accent);font-style:normal}
+.brand-logo{height:50px;max-width:260px;background:#fff;padding:6px 14px;border-radius:6px}
+.footer-logo{height:68px;max-width:280px;background:#fff;padding:8px 16px;border-radius:8px}
 .nav-links a{color:var(--muted)}
 .nav-links a:hover,.nav-links a.active{color:var(--accent)}
 
