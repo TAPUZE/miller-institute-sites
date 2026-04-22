@@ -8,3 +8,6 @@ site.zip
 server.out
 server.err
 package-lock.json.bak
+
+srv.out
+srv.err
