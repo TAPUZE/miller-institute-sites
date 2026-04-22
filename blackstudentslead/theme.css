@@ -11,6 +11,10 @@ h1,h2,h3,h4{font-family:'Fraunces',serif;color:var(--ink)}
 nav.site-nav{background:rgba(27,11,42,0.88);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}
 .brand,.brand a{color:var(--ink)}
 .brand em{color:var(--accent)}
+/* BSL native logo is tall (fist + africa + wordmark) */
+.brand-logo{height:56px;max-width:180px}
+.footer-logo{height:88px;max-width:240px}
+@media(max-width:600px){.brand-logo{height:44px;max-width:140px}}
 .nav-links a{color:var(--muted)}
 .nav-links a:hover,.nav-links a.active{color:var(--accent)}
 

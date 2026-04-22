@@ -11,6 +11,10 @@ h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:500}
 nav.site-nav{background:rgba(244,239,230,0.92);border-bottom:1px solid var(--line)}
 .brand{font-weight:600;letter-spacing:-0.01em}
 .brand em{color:var(--accent);font-style:italic}
+/* CMI wordmark is wide + horizontal — give it room */
+.brand-logo{height:38px;max-width:360px}
+.footer-logo{height:52px;max-width:380px;filter:brightness(0) invert(1)}
+@media(max-width:600px){.brand-logo{height:30px;max-width:220px}}
 
 /* Hero: centered institutional wordmark, no image background */
 header.hero{padding:140px 0 120px;text-align:center;background:var(--bg);border-bottom:1px solid var(--line)}
