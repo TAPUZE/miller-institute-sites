@@ -55,6 +55,34 @@ app.use((req, res, next) => {
   }
 });
 
+// Preview-URL helper: on default host, if an asset like /img/foo.png is
+// requested and the referer came from /<sitefolder>/..., rewrite to that
+// subfolder so images/CSS load the same as on real custom domains.
+const SITE_FOLDERS = new Set(Object.values(HOSTS));
+app.use((req, res, next) => {
+  const hostHeader = (req.headers.host || '').split(':')[0].toLowerCase();
+  if (HOSTS[hostHeader]) return next();
+  if (req.path.startsWith('/shared/')) return next();
+  // If URL already begins with a known site folder, let static handle it.
+  const firstSeg = req.path.split('/')[1];
+  if (SITE_FOLDERS.has(firstSeg)) return next();
+  const ref = req.headers.referer || req.headers.referrer;
+  if (ref) {
+    try {
+      const refPath = new URL(ref).pathname;
+      const refFirst = refPath.split('/')[1];
+      if (SITE_FOLDERS.has(refFirst)) {
+        const rewritten = '/' + refFirst + req.url;
+        const fsPath = path.join(ROOT, refFirst, req.path);
+        if (fs.existsSync(fsPath)) {
+          req.url = rewritten;
+        }
+      }
+    } catch (_) { /* ignore malformed referer */ }
+  }
+  next();
+});
+
 // Fallback: serve repo root for the default railway domain
 app.use(express.static(ROOT, staticOpts));
 
